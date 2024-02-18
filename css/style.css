@@ -1,0 +1,176 @@
+/* encode-sans-expanded-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Encode Sans Expanded";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/encode-sans-expanded-v11-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* encode-sans-expanded-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Encode Sans Expanded";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/encode-sans-expanded-v11-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* encode-sans-expanded-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Encode Sans Expanded";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/encode-sans-expanded-v11-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 200vh;
+  font-family: "Encode Sans Expanded" !important;
+  font-weight: 700 !important;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.header {
+  height: 160px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+li a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* classlar////////////////////////////////////////// */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.logo__img {
+  max-width: 100px;
+}
+.nav-link {
+  font-family: "Encode Sans Expanded";
+  font-weight: 600 !important;
+  box-shadow: inset 0 0 0 0 #54b3d6 !important;
+  color: #146380 !important ;
+  margin: 0 -0.25rem !important;
+  padding: 0 0.25rem !important;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+.nav-link:hover {
+  box-shadow: inset 100px 0 0 0 #54b3d6 !important;
+  color: white !important;
+}
+
+.main{
+  margin-bottom: 50px;
+}
+
+#main-users {
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media(max-width: 768px){
+  #main-users{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    margin: 20px;
+
+  }
+}
+
+.cart {
+  padding: 40px;
+  border-radius: 8px;
+  background-color: rgba(254, 254, 254, 0.272);
+}
+.cart:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+  background-color: rgb(50, 179, 226);
+  box-shadow: 3px 3px 15px rgba(30, 88, 163, 0.779);
+}
+.cart-box {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.cart-name {
+  color: burlywood;
+  text-align: center;
+}
+.cart-user {
+  margin-bottom: 25px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.cart-title {
+  margin-top: 10px;
+  color: rgb(228, 227, 227);
+}
+.cart-title:hover {
+  color: rgb(222, 222, 222);
+}
+
+.title-name {
+  color: aliceblue;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 20px;
+}
+.btn {
+  border-radius: 4px !;
+  background-color: #5ca1e1 !important;
+  border: none !important;
+  color: #fff !important;
+  text-align: center !important;
+  /* font-size: 32px !important; */
+  padding: 8px 25px !important;
+  transition: all 0.5s !important;
+  cursor: pointer !important;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7) !important;
+}
+.btn:hover{
+  transform: scale(1.09);
+  color: #fff !important;
+  background-color: #0088b9 !important;
+  transition: 0.5s !important;
+}
