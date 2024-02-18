@@ -87,22 +87,44 @@ body {
   }
 }
 
-.todo {
+.albom-box {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #e0e0e05f;
 }
-.todo-title {
-  padding: 50px;
-  border-radius: 8px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: aliceblue;
-  font-family: "Encode Sans Expanded" !important;
-  font-weight: 600 !important;
-  background-color: #f3f3f367;
-}
-.todo-title:hover{
+.albom-box:hover {
   transform: scale(1.02);
   transition: 0.5s;
-  background-color: #e7a53c !important;
-  box-shadow: 3px 3px 20px 8px rgba(236, 81, 42, 0.779);
+  background-color: #e73c7e !important;
+  box-shadow: 3px 3px 20px 8px rgba(236, 42, 223, 0.779);
+}
+
+.albom-title {
+  font-family: "Encode Sans Expanded" !important;
+  font-weight: 700 !important;
+}
+
+.albom-link {
+  border-radius: 5px !important;
+  background-color: #5ca1e1 !important;
+  border: none !important;
+  color: #fff !important;
+  text-align: center !important;
+  padding: 8px 15px !important;
+  transition: all 0.5s !important;
+  text-decoration: none;
+  cursor: pointer !important;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7) !important;
+  margin-bottom: 15px;
+}
+.albom-link:hover {
+  transform: scale(1.1);
+  color: #fff !important;
+  background-color: #0088b9 !important;
+  transition: 0.5s !important;
 }

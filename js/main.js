@@ -33,7 +33,7 @@ function displetStudent(students) {
             <div class="cart-btn">
             <div><a href="../pages/post.html" class="btn">Post</a></div>
             <div><a href="../pages/todo.html" class="btn">ToDo</a></div>
-            <div><a href="../pages/photos.html"class="btn">Photos</a></div>
+            <div><a href="../pages/albom.html"class="btn">Photos</a></div>
             </div>
         </div>
         `;

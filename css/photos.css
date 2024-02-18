@@ -87,22 +87,24 @@ body {
   }
 }
 
-.todo {
+.photo-box {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #e0e0e05f;
 }
-.todo-title {
-  padding: 50px;
-  border-radius: 8px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: aliceblue;
-  font-family: "Encode Sans Expanded" !important;
-  font-weight: 600 !important;
-  background-color: #f3f3f367;
-}
-.todo-title:hover{
+.photo:hover {
   transform: scale(1.02);
   transition: 0.5s;
-  background-color: #e7a53c !important;
-  box-shadow: 3px 3px 20px 8px rgba(236, 81, 42, 0.779);
+  background-color: #3ca3e7 !important;
+  box-shadow: 3px 3px 20px 8px rgba(42, 162, 236, 0.779);
+}
+
+.photo-title {
+  font-family: "Encode Sans Expanded" !important;
+  font-weight: 700 !important;
 }
